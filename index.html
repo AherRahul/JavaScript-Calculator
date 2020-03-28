@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid fullClass">
+        <div class="row">
+            <div class="col">
+            </div>
+
+            <!-- this is the bigger container holds the calculator part which consist of total 8 part of en -->
+            <div class="col-8 calcscreen border ">
+
+                <!-- This part of screen holds the answer of the operation -->
+                <div class="row outputpannel">
+                    <div class="col form-group">
+                        <input type="email" class="form-control" id="output" placeholder="Ans">
+                    </div>
+                </div>
+
+                <!-- This part hold the key and oprational keys -->
+                <div class="row border">
+                    <div class="col-11 nubersPannel">
+                        <div class="row">
+                            <div class="col border">
+                                <button type="button" onclick="calledfunction(1)"
+                                    class="btn btn-primary btn-block border ClacNumbutton">1</button>
+                            </div>
+                            <div class="col border">
+                                <button type="button" onclick="calledfunction(2)"
+                                    class="btn btn-primary btn-block border ClacNumbutton">2</button>
+                            </div>
+                            <div class="col border">
+                                <button type="button" onclick="calledfunction(3)"
+                                    class="btn btn-primary btn-block border ClacNumbutton">3</button>
+                            </div>
+
+                            <div class="col Opertaion border">
+                                <button type="button" onclick="captureFirstValue('+')"
+                                    class="btn btn-success btn-block border ClacNumbutton">+</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col border">
+                                <button type="button" onclick="calledfunction(4)"
+                                    class="btn btn-primary btn-block border ClacNumbutton">4</button>
+                            </div>
+                            <div class="col border">
+                                <button type="button" onclick="calledfunction(5)"
+                                    class="btn btn-primary btn-block border ClacNumbutton">5</button>
+                            </div>
+                            <div class="col border">
+                                <button type="button" onclick="calledfunction(6)"
+                                    class="btn btn-primary btn-block border ClacNumbutton">6</button>
+                            </div>
+
+                            <div class="col Opertaion border">
+                                <button type="button" onclick="captureFirstValue('-')"
+                                    class="btn btn-success btn-block border ClacNumbutton">-</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col border">
+                                <button type="button" onclick="calledfunction(7)"
+                                    class="btn btn-primary btn-block border ClacNumbutton">7</button>
+                            </div>
+                            <div class="col border">
+                                <button type="button" onclick="calledfunction(8)"
+                                    class="btn btn-primary btn-block border ClacNumbutton">8</button>
+                            </div>
+                            <div class="col border">
+                                <button type="button" onclick="calledfunction(9)"
+                                    class="btn btn-primary btn-block border ClacNumbutton">9</button>
+                            </div>
+
+                            <div class="col Opertaion border">
+                                <button type="button" onclick="captureFirstValue('*')"
+                                    class="btn btn-success btn-block border ClacNumbutton">*</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col border">
+
+                            </div>
+                            <div class="col border">
+                                <button type="button" onclick="calledfunction(0)"
+                                    class="btn btn-primary btn-block border ClacNumbutton">0</button>
+                            </div>
+                            <div class="col border">
+                                <button type="button" onclick="clearMe()"
+                                    class="btn btn-secondray btn-block border ClacNumbutton">Clr</button>
+                            </div>
+
+                            <div class="col Opertaion border">
+                                <button type="button" onclick="captureFirstValue('/')"
+                                    class="btn btn-success btn-block border ClacNumbutton">/</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- In this part the = sign perform the operations and give the answer -->
+                    <div class="col  OparationalPannel">
+                        <div class="row" style="justify-content: end">
+                            <button type="button" onclick="solve()"
+                                class="btn btn-danger btn-block border ClacNumbutton"
+                                style="padding-top: 80px; padding-bottom: 80px;">=</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+
+            </div>
+
+            <div class="col-8">
+                <h1 id="message"></h1>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

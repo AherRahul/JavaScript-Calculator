@@ -1,0 +1,35 @@
+.calcscreen
+{
+    margin: 15px;
+}
+.ClacNumbutton
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.OparationalPannel
+{
+    background-color:white;
+}
+.border
+{
+    border-color: rgb(53, 51, 51);
+}
+.ClacNumbutton
+{
+    margin: 5px;
+    padding: 15px;
+}
+.outputpannel
+{
+    padding-top: 15px;
+}
+#message
+{
+    color: red;
+}
+.errorpannel
+{
+    border: 2px solid;
+    
+}
